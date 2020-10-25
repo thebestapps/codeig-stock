@@ -1,0 +1,41 @@
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+
+    -moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+ 
+	/*
+	  Introduced in IE 10.
+	  See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+	*/
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#fakeheight{
+    position: fixed;
+    height: 100% !important;
+}
+
+.ledger-container {
+    margin: 0;
+    padding: 0;
+}
+
+.ak-logo-button{
+    background: #000;
+    border-radius: 100%;
+    outline:none;
+}
+
+#navigation-link {
+    padding: 0 !important;
+    background-color: #e3f2fd;
+}
+
+.nav-pointer {
+    cursor: pointer;
+}

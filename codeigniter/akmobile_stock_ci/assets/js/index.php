@@ -1,0 +1,1 @@
+<?php exit('Direct access is not allowed.');

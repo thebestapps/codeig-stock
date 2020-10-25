@@ -1,0 +1,41 @@
+.matrix_style_button_top{
+    list-style-type: none;
+    padding:10px;
+}
+
+.matrix_style_button_top li{
+    display: inline;
+}
+
+a.matrix_grid_attributes{
+    color: #ffffff;
+    /* font-size: 12px; */
+    text-decoration: none;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#MatrixItemWindow{
+	min-height: 50% !important;
+	max-height: 100% !important;
+	min-width: 50% !important;
+	max-width: 100% !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.required:after { 
+    color: #d00;
+    content: "*";
+    /* position: absolute; */
+    margin-left: 0px;
+    /* top:7px; */
+}
+
+#matrix_form_validation {
+    font-weight: bold;
+}
+
+.matrix_function_after_save {
+    display: none;
+}

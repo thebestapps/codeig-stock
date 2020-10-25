@@ -1,0 +1,470 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    overflow: hidden;
+}
+
+#main {
+    background: #888;
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    width: 100%;
+}
+
+#head {
+    background: #2a2d33;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    -webkit-box-shadow: 0px 3px 17px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px 3px 17px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px 3px 17px 0px rgba(50, 50, 50, 0.3);
+    z-index:999;
+}
+
+#left {
+    background: #f3f5f7;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 99;
+}
+#themeArea, #searchArea {
+    height: 60px;
+    background: #FCFCFC;
+    border-bottom: 1px solid #e3e3e3; 
+    overflow: hidden;
+}
+#themeArea {
+    display:none;
+}
+#content {
+}
+#right {
+    border-left: 1px solid #e3e3e3;
+    background: #fff;
+    margin-left: 300px;
+    height: 100%;
+    overflow: auto;
+    position:relative;
+}
+#divDescription {
+    font-family: 'segoe ui', arial, sans-serif;
+    font-size: 14px; 
+}
+#foot {
+    color: #2d3e50 !important;
+    background: #FCFCFC;
+    display: block;
+    font-family: 'segoe ui', arial, sans-serif;
+    font-size: 14px; 
+    border-top: #e5e5e5 1px solid;
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    overflow:hidden;
+}
+#foot a, #foot a:visited, #foot a:hover {
+    color: #2d3e50 !important;
+    font-family: 'segoe ui', arial, sans-serif;
+    font-size: 14px; 
+}
+
+
+.menu {
+    background: #FCFCFC;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menu-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-item, .menu-minimized-element {
+    color: #2d3e50 !important;
+    background: #FCFCFC;
+    display: block;
+    font-family: 'segoe ui', arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: normal;
+    cursor: pointer;
+    border-bottom: 1px solid #E3E3E3;
+     padding: 6px 3px 7px 20px;
+}
+.menu-main-item {
+ background: #FCFCFC
+}
+.menu-minimized-icon {
+    background-image: url(../images/minimized.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 24px;
+    width: 24px;
+    padding: 0px;
+    margin-left: 7px;
+    margin-top: 4px;
+    float : left;
+}
+.menu-top-minimized-icon {
+    background-image: url(../images/minimized-white.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 24px;
+    width: 24px;
+    padding: 0px;
+    margin-left: 7px;
+    margin-top: 4px;
+    float : left;
+}
+.menu-label {
+    cursor: pointer;
+    display: inline;
+    font-family: 'segoe ui', arial, sans-serif;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+}
+.menu-title {
+    font-size: 14px;
+    position: relative;
+}
+.menu-item-hover, .menu-back-item, .menu-item-selected  {
+    cursor: pointer;
+    background: #FCFCFC;
+    color: #006aae;
+    text-shadow: none;
+}
+.menu-item-hover {
+    background: #dedede;
+    border-color: #dedede;
+}
+.menu-item-group, .menu-item-group .menu-label{
+    background: #FCFCFC !important;
+    color: #006aae;
+    font-weight:bold;
+    border-color: rgba(0,0,0,0.1);
+    cursor: default !important;
+}
+.menu-item-selected {
+   color: #fff !important;
+   background: #006aae !important;
+}
+.menu-arrow-down {
+    background-image: url('../ngwidgets/styles/images/metro-icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: 2px;
+}
+.menu-arrow-up {
+    background-image: url('../ngwidgets/styles/images/metro-icon-up-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: 2px;
+}
+.menu-arrow {
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../images/arrow-right.png);
+    background-origin: padding-box;
+    background-size: auto;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 14px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 2px;
+    width: 16px;
+}
+
+.menu-arrow-back {
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../images/arrow-left.png);
+    background-origin: padding-box;
+    background-size: auto;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: 2px;
+    width: 16px;
+    margin-left: -18px;
+    margin-right: 2px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #E4E4E8;
+    border: solid #D5D5DB;
+    border-width: 1px;
+    min-height: 28px;
+}
+
+.mobile body {
+    overflow-x:hidden;
+}
+.mobile #left {
+        background: #f3f5f7;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+.mobile #right {
+        margin-left: 0px;
+        background: #fcfcfc;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        overflow-x:hidden;
+    }
+
+.mobile #main {
+        overflow-y: auto;
+        overflow-x: hidden;
+}
+.mobile .logo {
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+.tablet #left {
+    background: #fcfcfc;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dedede;
+}
+
+.tablet #right {
+    margin: 0px;
+    background: #fcfcfc;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.tablet #tabs-1, .tablet #tabs-2, .tablet #tabs-3 {
+  margin-left: 0px !important;
+}
+.tablet .demoText {
+   margin-left: 0px !important;
+}
+
+.tablet #main {
+          overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+.ng-widget-icon-container {
+    border-radius: 3px; width: 16px; height: 16px; padding: 2px; float: left; left:-4px; position: relative; background: #1771FF;
+}
+.ng-widget-icon { border:none; float: left; background: url('widget_icons.png'); width:16px; height: 16px; background-repeat:no-repeat;}
+
+.ng-button-icon{ background-position: 0 0; width: 16px; height: 16px; } 
+.ng-calendar-icon{ background-position: 0 -32px; width: 16px; height: 16px; } 
+.ng-chart-icon{ background-position: 0 -64px; width: 16px; height: 16px; } 
+.ng-colorpicker-icon{ background-position: 0 -96px; width: 16px; height: 16px; } 
+.ng-combobox-icon{ background-position: 0 -128px; width: 16px; height: 16px; } 
+.ng-dataadapter-icon{ background-position: 0 -160px; width: 16px; height: 16px; } 
+.ng-datatable-icon{ background-position: 0 -192px; width: 16px; height: 16px; } 
+.ng-datetimeinput-icon{ background-position: 0 -224px; width: 16px; height: 16px; } 
+.ng-docking-icon{ background-position: 0 -256px; width: 16px; height: 16px; } 
+.ng-dockpanel-icon{ background-position: 0 -288px; width: 16px; height: 16px; } 
+.ng-dragdrop-icon{ background-position: 0 -320px; width: 16px; height: 16px; } 
+.ng-dropdownlist-icon{ background-position: 0 -352px; width: 16px; height: 16px; } 
+.ng-expander-icon{ background-position: 0 -384px; width: 16px; height: 16px; } 
+.ng-gauge-icon{ background-position: 0 -416px; width: 16px; height: 16px; } 
+.ng-grid-icon{ background-position: 0 -448px; width: 16px; height: 16px; } 
+.ng-inputfield-icon{ background-position: 0 -480px; width: 16px; height: 16px; } 
+.ng-knockoutjs-icon{ background-position: 0 -512px; width: 16px; height: 16px; } 
+.ng-maskedinput-icon{ background-position: 0 -544px; width: 16px; height: 16px; } 
+.ng-menu-icon{ background-position: 0 -576px; width: 16px; height: 16px; } 
+.ng-navigationbar-icon{ background-position: 0 -608px; width: 16px; height: 16px; } 
+.ng-numberinput-icon{ background-position: 0 -640px; width: 16px; height: 16px; } 
+.ng-panel-icon{ background-position: 0 -672px; width: 16px; height: 16px; } 
+.ng-passwordinput-icon{ background-position: 0 -704px; width: 16px; height: 16px; } 
+.ng-php-icon{ background-position: 0 -736px; width: 16px; height: 16px; } 
+.ng-progressbar-icon{ background-position: 0 -768px; width: 16px; height: 16px; } 
+.ng-rangeselector-icon{ background-position: 0 -800px; width: 16px; height: 16px; } 
+.ng-rating-icon{ background-position: 0 -832px; width: 16px; height: 16px; } 
+.ng-response-icon{ background-position: 0 -864px; width: 16px; height: 16px; } 
+.ng-scrollbar-icon{ background-position: 0 -896px; width: 16px; height: 16px; } 
+.ng-scrollview-icon{ background-position: 0 -928px; width: 16px; height: 16px; } 
+.ng-slider-icon{ background-position: 0 -960px; width: 16px; height: 16px; } 
+.ng-splitter-icon{ background-position: 0 -992px; width: 16px; height: 16px; } 
+.ng-tabs-icon{ background-position: 0 -1024px; width: 16px; height: 16px; } 
+.ng-tooltip-icon{ background-position: 0 -1056px; width: 16px; height: 16px; } 
+.ng-touch-icon{ background-position: 0 -1088px; width: 16px; height: 16px; } 
+.ng-tree-icon{ background-position: 0 -1120px; width: 16px; height: 16px; } 
+.ng-treegrid-icon{ background-position: 0 -1152px; width: 16px; height: 16px; } 
+.ng-treemap-icon{ background-position: 0 -1184px; width: 16px; height: 16px; } 
+.ng-validator-icon{ background-position: 0 -1216px; width: 16px; height: 17px; } 
+.ng-window-icon{ background-position: 0 -1249px; width: 16px; height: 16px; } 
+.ng-editor-icon{ background-position: 0 -1282px; width: 16px; height: 16px; } 
+.ng-bulletchart-icon{ background-position: 0 -1315px; width: 16px; height: 16px; } 
+.ng-listbox-icon{ background-position: 0 -1345px; width: 16px; height: 16px; } 
+.ng-listmenu-icon{ background-position: 0 -1381px; width: 16px; height: 16px; } 
+.ng-notification-icon{ background-position: 0 -1421px; width: 16px; height: 16px; } 
+.ng-angularjs-icon{ background-position: 0 -1459px; width: 16px; height: 16px; } 
+.ng-bootstrap-icon{ background-position: 0 -1499px; width: 16px; height: 16px; } 
+.ng-requirejs-icon{ background-position: 0 -1539px; width: 16px; height: 16px; } 
+.ng-jquerymobile-icon{ background-position: 0 -1579px; width: 16px; height: 16px; } 
+.ng-draw-icon{ background-position: 0 -1619px; width: 16px; height: 16px; }
+.ng-doc-icon{ background-position: 0 -1663px; width: 16px; height: 18px; }
+
+.ngx-top-menu {
+    background: transparent;
+    border: none;
+    font-family: 'segoe ui', arial, sans-serif;
+    font-size: 16px;
+    margin-right:50px;
+}
+.ngx-top-menu-popup {
+    background: #f3f5f7;
+    border: none;
+    font-family: 'segoe ui', arial, sans-serif;
+    font-size: 16px;
+}
+.ngx-top-menu-item, .ngx-top-menu-popup-item {
+    cursor: pointer;
+    color: #fff;
+    float: left;
+    padding: 6px 12px 6px 12px;
+    margin: 1px;
+}
+.ngx-top-menu-item:hover {
+    color: #a2aac1;    
+    -webkit-transition: color 0.3s ease 0s;
+    -moz-transition: color 0.3s ease 0s;
+    -ms-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+}
+
+.ngx-top-menu-item-mobile {
+    float: none;
+    padding: 15px;
+    font-size: 16px !important;
+}
+.ngx-top-menu-sub-item {
+    margin-left: 20px;
+}
+.ngx-top-menu-popup-item {
+    color: #2a2d33; 
+}
+.ngx-top-menu-item a:link, .ngx-top-menu-item a:visited, .ngx-top-menu-item a:hover
+{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    background-color: transparent;
+    *color: expression(this.parentNode.currentStyle['color']);     
+}
+
+#intro {
+  font-family: 'segoe ui', arial, sans-serif;
+}
+.demoText {
+    font-size: 16px;
+    color: #646464;
+    min-height: 32px;
+    cursor: default;
+}
+.demoTabs {
+    background: #fff;
+    border: none;
+    min-width: 1000px;
+    width: 100%;
+}
+
+.ngx-widget-ngxtabs {
+    border: none;
+}
+
+.ngx-widget-header-ngxtabs {
+    border: none;
+    background: transparent;
+}
+
+.ngx-tabs-title-ngxtabs {
+    color: #3F3F3F;
+    font-weight: 300 !important;
+    border: none;
+    border-bottom: 5px solid transparent;
+}
+
+.ngx-tabs-title-selected-top-ngxtabs {
+    color: #3F3F3F;
+    border: none;
+    background: transparent;
+    border-bottom: 5px solid #00a2e8;
+    -webkit-transition: color 0.3s ease 0s;
+    -moz-transition: color 0.3s ease 0s;
+    -ms-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+}
+.ngx-tabs-title-selected-top-ngxtabs:hover {
+    color: #00a2e8;
+}
+.ngx-tabs-title-hover-top-ngxtabs {
+    background: none;
+    color: #00a2e8;
+    border-color: transparent;
+    -webkit-transition: color 0.3s ease 0s;
+    -moz-transition: color 0.3s ease 0s;
+    -ms-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+    border-bottom: 5px solid transparent;
+}
+.ngx-tabs-title-hover-top-ngxtabs {
+    color: #00a2e8;
+}

@@ -1,0 +1,223 @@
+.hdnumpad {
+	display: inline-block;
+}
+.hdnumpad, .hdnumpad .hdline, .hdnumpad .hdline ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.hdnumpad .hdline {
+	text-align: center;
+	margin-left: -14px;
+}
+.hdnumpad .hdline ul li {
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	border: 1px solid #468db3;
+	-webkit-box-shadow: 0 0 0px #468db3;
+	-webkit-box-shadow: inset 0 0 0px #468db3;
+	margin: 10px 0 1px 14px;
+	color: #f7faf7;
+	border-radius: 5px;
+	width: 52px;
+	/*height: 52px;*/
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 45px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; 
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.hdnumpad .hdline .clear_weigh{
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	border: 1px solid #468db3;
+	-webkit-box-shadow: 0 0 3px #468db3;
+	-webkit-box-shadow: inset 0 0 3px #468db3;
+	margin: 10px 0 1px 14px;
+	color: #f7faf7;
+	border-radius: 5px;
+	width: 52px;
+	/*height: 52px;*/
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 45px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; 
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.hdnumpad .hdline ul li:hover, .hdnumpad .hdline ul li.active {
+	background-color: #185a82;
+}
+
+.hdnumpad .hdline .return {
+	width: 80px;
+}
+
+.hdnumpad .hdline .weight_button{
+	width: 80px;
+}
+
+.hdnumpad .hdline .backspace {
+	width: 80px;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.hdnumpad .hdline .backspace_long {
+	width: 120px;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.hdnumpad .hdline .backspace_verylong {
+	width: 185px;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.hdnumpad .hdline .exit {
+	width: 80px;
+}
+
+.hdnumpad .hdline .alert_close {
+	width: 80px;
+}
+
+.hdnumpad .hdline .button_cancel {
+	width: 80px;
+}
+
+.hdnumpad .hdline .skip_button{
+	width: 80px;
+}
+
+.hdnumpad .hdline .clear_items {
+	width: 80px;
+}
+
+.hdnumpad .hdline .empty_long {
+	width: 80px;
+	border: none;
+	pointer-events:none;
+}
+
+.hdnumpad .hdline .empty_supershort {
+	width: 30px;
+	border: none;
+	pointer-events:none;
+}
+
+.hdnumpad .hdline .empty_short {
+	width: 52px;
+	border: none;
+	pointer-events:none;
+}
+
+/*POS Main*/
+.hdnumpad .hdline .button_quantity_change_cancel {
+	width: 80px;
+}
+
+.hdnumpad .hdline .button_proceed, .hdnumpad .hdline .button_q_cancel {
+	width: 80px;
+}
+
+/*POS Payment*/
+.hdnumpad .hdline .signature_accept, .hdnumpad .hdline .signature_clear {
+	width: 80px;
+}
+
+.hdnumpad .hdline .create_form {
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+
+.hdnumpad .hdline .save_form {
+	width: 80px;
+}
+
+.hdnumpad .hdline .swipe_card {
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+
+.hdnumpad .hdline .edit_card {
+	width: 100px !important;
+	padding: 0 5px 0 5px;
+}
+
+.hdnumpad .hdline .authorize_card {
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+
+.hdnumpad .hdline .delete_card {
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+
+.hdnumpad .hdline .button_yes {
+	width: 80px;
+}
+
+.hdnumpad .hdline .button {
+	width: 80px;
+}
+
+.hdnumpad .hdline .alert_yes_ok {
+	width: 80px;
+}
+
+.hdnumpad .hdline .timeclock_ok {
+	width: 80px;
+}
+
+.hdnumpad .hdline .select_me {
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+
+.hdnumpad .hdline .edit_form{
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+
+.hdnumpad .hdline .customer_card_prompt{
+	width: auto;
+	padding: 0 5px 0 5px;
+} 
+
+.hdnumpad .hdline .customer_card_swipe{
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+
+.hdnumpad .hdline .report{
+	width: auto;
+	padding: 0 5px 0 5px;
+} 
+
+.hdnumpad .hdline .gcCancel{
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+	
+}
+
+
+/*End*/
+

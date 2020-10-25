@@ -1,0 +1,17 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT,L] 
+<IfModule mod_headers.c>
+	Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+#Rewrite URL's
+#RewriteRule ^404/?$ http://google.com [NC]
+#RewriteRule ^403/?$ http://google.com [NC]
+#RewriteRule ^500/?$ http://google.com [NC]
+
+# Enable Error Documents
+# (404,File Not Found) | (403,Forbidden) | (500,Internal Server Error)
+ErrorDocument 403 http://google.com
+ErrorDocument 404 http://google.com

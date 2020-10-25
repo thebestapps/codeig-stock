@@ -1,0 +1,46 @@
+.hdgiftcard {
+	display: inline-block;
+}
+.hdgiftcard, .hdgiftcard .hdline, .hdgiftcard .hdline ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.hdgiftcard .hdline {
+	text-align: center;
+	margin-left: -14px;
+}
+.hdgiftcard .hdline ul li {
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	border: 1px solid #468db3;
+	-webkit-box-shadow: 0 0 3px #468db3;
+	-webkit-box-shadow: inset 0 0 3px #468db3;
+	margin: 10px 0 1px 14px;
+	color: #f7faf7;
+	width: 120px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 52px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.hdgiftcard .hdline ul li:hover, .hdgiftcard .hdline ul li.active {
+	background-color: #185a82;
+}
+
+.hdgiftcard .hdline .gcCancel{
+	width: auto;
+	padding: 0 5px 0 5px;
+}
+/*End*/
+

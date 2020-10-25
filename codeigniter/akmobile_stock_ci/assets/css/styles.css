@@ -1,0 +1,366 @@
+/*Navigation*/
+
+.icon-dashboard {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/dashboard.png");
+	background-size: cover;
+}
+
+.icon-back {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/back.png");
+	background-size: cover;
+}
+
+.icon-new {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/ItemNew.png");
+	background-size: cover;
+}
+
+.icon-edit {
+	background-size: 100%;
+   	background-image: url("../../assets/img/backoffice/ItemEdit.png");
+	background-size: cover;
+}
+
+.icon-home {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/dashboard.png");
+	background-size: cover;
+}
+
+
+
+.icon-reports {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/reports.png");
+	background-size: cover;
+}
+
+/*Item Module*/
+
+.icon-item {
+	background-size: 100%;
+	background-image: url("../../assets/img/backoffice/Item.png");
+	background-size: cover;
+}
+
+
+.icon-user {
+    background-size: 100%;
+    background: url('../img/backoffice/Users.png');
+    background-size: cover;
+}
+
+.icon-item-category {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/Category.png");
+	background-size: cover;
+    }
+	
+.icon-item-brand {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/ItemBrand.png");
+    background-size: cover;
+}
+
+.icon-item-price-schedule {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/ItemPriceSchedule.png");
+    background-size: cover;
+}
+
+.icon-item-style-new{
+    background-size: 100%;
+    background-image: url("../../assets/img/backoffice/ItemStyleNew.png");
+	background-size: cover;
+}
+
+.icon-item-style-view{
+    background-size: 100%;
+    background-image: url("../../assets/img/backoffice/ItemStyleView.png");
+	background-size: cover;
+}
+
+.icon-item-style-edit{
+    background-size: 100%;
+    background-image: url("../../assets/img/backoffice/ItemStyleEdit.png");
+	background-size: cover;
+}
+
+/*Barcode Module*/
+.icon-item-barcode {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/Barcode.png");
+	background-size: cover;
+}
+
+
+/*Price Schedule + Other Modules ??*/
+.icon-remove {
+		background-repeat: no-repeat;
+		background-image: url("../../assets/img/backoffice/remove3.png");
+	}
+	
+.icon-item-count {
+	background-size: 100%;
+    background: url('../../assets/img/backoffice/ItemCount.png');
+    background-size: cover;
+}
+.icon-item-stock-adjust {
+	background-size: 100%;
+    background: url('../../assets/img/backoffice/StockAdjust.png');
+    background-size: cover;
+}
+.icon-import {
+    width: 20px;
+    background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/printer.png");
+	background-size: cover;
+}
+
+	
+/*TimeClock Module*/
+.icon-timeclock {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/TimeClock.png");
+	background-size: cover;
+    }
+	
+
+/*Purchase Module*/
+.icon-purchase {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/Purchase.png");
+	background-size: cover;
+    }
+	
+/*Transfer Module*/
+.icon-transfer {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/Transfer.png");
+	background-size: cover;
+    }
+
+/*Customer Module*/
+.icon-customer {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/Customer.png");
+	background-size: cover;
+    }
+
+
+/*Supplier Module*/
+.icon-supplier {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/Supplier.png");
+	background-size: cover;
+    }
+
+/*Admin Discount*/
+.icon-discount {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/Discount.png");
+	background-size: cover;
+    }
+
+/*Admin Receipt Design*/
+.icon-receipt-design {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/ReceiptDesign.png");
+	background-size: cover;
+    }
+
+	
+/*Admin Return*/
+.icon-return {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/Return.png");
+	background-size: cover;
+    }
+	
+/*Admin User Position*/
+.icon-user-position {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/UserPosition.png");
+	background-size: cover;
+    }
+	
+/*Admin Order Type*/
+.icon-order-type {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/OrderType.png");
+	background-size: cover;
+    }
+	
+/*Admin Payout*/
+.icon-payout {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/PayOut.png");
+	background-size: cover;
+    }
+
+/*Admin Tax*/
+.icon-tax {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/Tax.png");
+	background-size: cover;
+    }
+	
+/*Admin Payment*/
+.icon-payment {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/Payment.png");
+	background-size: cover;
+    }
+	
+
+/*Admin Payment*/
+.icon-stock-adjust {
+	background-size: 100%;
+    background-image: url("../../assets/img/backoffice/StockAdjust.png");
+	background-size: cover;
+}
+
+/*BackOffice Module*/
+
+.icon-print {
+    background: url("../../assets/img/backoffice/print.png") no-repeat;
+    float: left;
+    background-size: 30px 33px;
+    width: 30px;
+    height: 33px;
+}
+
+
+
+/*Email Icon */
+
+.icon-email {
+   background: url("../../assets/img/backoffice/email.png") no-repeat;
+   /*background-size: 100%;
+   background-size: cover;*/
+   float: left;
+   background-size: 30px 33px;
+   width: 30px;
+   height: 33px;
+}
+
+/*Download Icon */
+.icon-download {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/download.png");
+	background-size: cover;
+}
+
+/*Clear Icon */
+.icon-clear {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/Clear.png");
+	background-size: cover;
+}
+
+.icon-label {
+	background-size: 100%;
+    	background-image: url("../../assets/img/backoffice/label.png");
+	background-size: 32px 32px;
+}
+
+/*Other*/
+
+.icon-trash {
+    position: absolute;
+    left:0;
+    background: url("../../assets/img/backoffice/Delete.png") no-repeat;
+    background-size: 85%; /*75%*/
+    background-position: 3px 4px;
+    width:25px;
+    height:25px;
+    border:0;
+    outline: 0;
+}
+.icon-trash.user-del-btn {
+    margin-top: -8px;
+    padding: 10px;
+	background-size: cover;
+}
+
+ul.nav  li a.cat_id{
+    text-align:center;
+    left:0;
+    /*background: url("../assets/img/pending.png") no-repeat;*/
+    background-size: 45%; /*75%*/
+    background-position: -3px 0px 5px 0px;
+    width:110px;
+    height:50px;
+    border:0;
+    outline: 0;
+	color:white;
+	background-color:green;
+	padding-right: 5px;
+}
+
+ul.nav  li a.subcat_id{
+    left:0;
+    background-size: 35%;
+    background-position: 0px 0px 5px 0px;
+    width:120px;
+    height:50px;
+    border:0;
+    outline: 0;
+	text-align:center;
+	color:white;
+	background-color:red;
+	padding-right: 5px;
+}
+
+/*
+ul.nav  li a.subcat_id2{
+    left:0;
+    background-size: 35%;
+    background-position: 0px 0px 5px 0px;
+    width:120px;
+    height:50px;
+    border:0;
+    outline: 0;
+	text-align:center;
+	padding-right: 5px;
+}
+
+ul.nav  li a.subcat_id3{
+    left:0;
+    background-size: 35%;
+    background-position: 0px 0px 5px 0px;
+    width:120px;
+    height:50px;
+    border:0;
+    outline: 0;
+	text-align:center;
+	padding-right: 5px;
+}
+*/
+ 
+.icon-remove {
+    background: url("../../assets/img/backoffice/delete.png") no-repeat;
+    float: left;
+    background-size: 25px 35px;
+    width: 25px;
+    height: 35px;
+	padding-right: 35px;
+}
+.icon-remove-row {
+    background: url("../../assets/img/backoffice/delete_row.png") no-repeat;
+    float: left;
+    background-size: 25px 35px;
+    width: 25px;
+    height: 35px;
+}
+
+
+/* Project Job Module*/
+.icon-project {
+	background-size: 100%;
+   	background-image: url("../../assets/img/backoffice/ProjectJobs.png");
+	background-size: cover;
+}

@@ -1,0 +1,23 @@
+.dx-scheduler-cell-sizes-horizontal {
+    width: 100px;
+}
+
+.dx-scheduler-time-panel { 
+    display: none;
+    margin-left: 0px !important;
+}
+.dx-scheduler-date-table {
+    margin-left: 0px;
+}
+.dx-scheduler-date-table .dx-scheduler-date-table-row:before {
+    content: none;
+}
+
+.dx-scheduler-work-space-vertical-grouped[dx-group-column-count='1'].dx-scheduler-work-space-both-scrollbar .dx-scheduler-date-table-scrollable {
+    /* margin-left: 100px; */
+}
+
+.dx-scheduler-appointment{
+    width: 260px !important;
+    height: 198px !important;
+}

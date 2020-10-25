@@ -1,0 +1,151 @@
+#fakeheight{
+    position: fixed;
+    height: 100% !important;
+}
+
+.icon-new {
+    background-size: 100%;
+    background-image: url("../img/backoffice/ItemNew.png");
+    background-size: cover;
+    color: #000 !important;
+}
+	
+.icon-back {
+	background-size: 100%;
+    background-image: url("../img/backoffice/back.png");
+	background-size: cover;
+}
+
+.icon-home {
+	background-size: 100%;
+    background-image: url("../img/backoffice/dashboard.png");
+	background-size: cover;
+}
+
+.icon-import {
+    width: 20px;
+    background-size: 100%;
+    background-image: url("../img/backoffice/printer.png");
+	background-size: cover;
+}
+
+#new_item_count{
+    width: 550px !important;
+    height: 500px !important;
+}
+
+.glyphicon {
+    font-size: 20px !important;
+}
+
+
+#item_count_edit{
+    min-height: 94.5% !important;
+    top: 50px !important;
+    left: 0 !important;
+}
+
+#item_count_complete_window {
+    min-height: 94.5% !important;
+    top: 50px !important;
+    left: 0 !important;
+}
+
+.edit-fn {
+    display: none;
+}
+
+.edit_item_count_labels {
+    float:left !important; 
+    margin:0 5px 0; 
+    font-weight: bolder; 
+    font-size: 14px; 
+    width: 10%; 
+    text-align:right;
+}
+
+div.toolbar-list span {
+    display: block;
+    float: none;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+}
+
+.btn-fn {
+    color: #000 !important;
+}
+
+.jqx-tabs-header{
+    color: #000 !important;
+    font-weight: bold !important; 
+}
+
+.jqx-grid-column-header{
+    color: #000 !important;
+    font-weight: bold !important;
+}
+
+.navbar-nav{
+    height: 80px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    #new_item_count{
+        width: 580px !important;
+        height: 530px !important;
+    }
+
+    #item_count_edit{
+        min-height: 94.5% !important;
+        top: 50px !important;
+        left: 0 !important;
+    }
+
+    #item_count_complete_window {
+        min-height: 94.5% !important;
+        top: 50px !important;
+        left: 0 !important;
+    }
+
+    .edit_item_count_labels {
+        float:left !important; 
+        margin:0 5px 0; 
+        font-weight: bolder; 
+        font-size: 14px; 
+        width: 10%; 
+        text-align:right;
+    }
+    
+    .edit_item_count_label_input{ 
+        width: 50%;
+        display: flex;
+        margin: 10px 0 0 0;
+        justify-content: space-between;
+    }
+
+    .icon-new {
+        background-size: 100%;
+        background-image: url("../img/backoffice/ItemNew.png");
+        background-size: cover;
+        color: #000 !important;
+    }
+        
+    .icon-back {
+        background-size: 100%;
+        background-image: url("../img/backoffice/back.png");
+        background-size: cover;
+    }
+    
+    .icon-home {
+        background-size: 100%;
+        background-image: url("../img/backoffice/dashboard.png");
+        background-size: cover;
+    }
+    .icon-import {
+        width: 20px;
+        background-size: 100%;
+        background-image: url("../img/backoffice/printer.png");
+        background-size: cover;
+    }
+}

@@ -1,0 +1,178 @@
+#alert_message {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#qrc_alert_message {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.table_manual_title1 {
+    float:left;
+    width: 60% !important;
+}
+
+.table_manual_title2 {
+    float:left;
+    width: 38% !important;
+}
+
+#table_manual_search_field{
+    display: block;
+	margin: 0 auto;
+	padding: 5px 10px;
+	font-size: 28px; 
+	width: 100%;
+}
+
+#table_manual_passcode{
+    width: 450px !important;
+    height: 485px !important;
+}
+
+/* #table_inuse{
+    float:left;
+    height: 460px !important;
+    width: 604px !important;
+    border: 1px solid #000;
+    background: #fff;
+    margin-right: 15px;
+    overflow: auto;
+    margin-left: 0;
+} */
+
+/* .table_manual_tables_inuse{
+    width: 150px !important;
+    height: 90px !important;
+    text-align: center;
+    font-size: 2em !important;
+    font-weight: bold;
+    line-height: 20px;
+    overflow: hidden;
+} */
+
+.table_manual_tables_inuse{
+    background-color: #B833FF;
+}
+
+.table_manual_tables_inuse:nth-child(odd){
+  background-color: #7433FF
+}
+
+#table_manual_keyin{
+    width: 53% !important;
+    max-width: 80% !important;
+    min-width: 30% !important;
+    height: 550px !important;
+    margin: 0;
+    padding: 0;
+}
+
+#table_no_of_customer{
+    width: 450px !important;
+    height: 485px !important;
+}
+
+#table_number_field .jqx-input-content {
+    font-size: 2em !important;
+    width: 100% !important;
+}
+
+.scroll_button_top{
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 80px;
+    background-color: #000;
+}
+
+.scroll_button_bottom{
+    position: absolute;
+    top: 40px;
+    height: 40px;
+    width: 80px;
+    background-color: #000;
+}
+
+
+.tbnumpad .tbline ul li {
+    width: 24.5% !important;
+    line-height: 67px !important;  
+    margin:0 !important;
+}
+
+#table_inuse{
+    float:left;
+    height: 460px !important;
+    width: 60% !important;
+    border: 1px solid #000;
+    background: #fff;
+    margin-right: 15px;
+    overflow: auto;
+    margin-left: 0;
+}
+
+.table_manual_tables_inuse{
+    width: 20% !important;
+    height: 90px !important;
+    text-align: center;
+    font-size: 1em !important;
+    font-weight: bold;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.table_manual_form{
+    width: 100% !important;
+}
+
+@media screen and (max-width: 1024px){
+    #table_no_of_customer{
+        width: 580px !important;
+        height: 530px !important;
+    }
+
+    #table_manual_passcode{
+        width: 580px !important;
+        height: 580px !important;
+    }
+
+    #table_manual_keyin{
+        min-width: 100% !important;
+        width: 100% !important;
+        min-height: 680px !important;
+        height: 680px !important;
+    }
+    
+    .table_manual_form{
+        width: 100% !important;
+    }
+
+    .tbnumpad .tbline ul li {
+        width: 24.5% !important;
+        line-height: 67px !important;  
+        margin:0 !important;
+    }
+
+    #table_inuse{
+        float:left;
+        height: 580px !important;
+        width: 60% !important;
+        border: 1px solid #000;
+        background: #fff;
+        margin-right: 15px;
+        overflow: auto;
+        margin-left: 0;
+    }
+
+    .table_manual_tables_inuse{
+        width: 20% !important;
+        height: 90px !important;
+        text-align: center;
+        font-size: 1em !important;
+        font-weight: bold;
+        line-height: 20px;
+        overflow: hidden;
+    }
+}

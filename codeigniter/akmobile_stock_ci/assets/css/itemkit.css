@@ -1,0 +1,29 @@
+#fakeheight {
+    position: fixed;
+    height: 100% !important;
+}
+
+#aksidebar {
+    float: left;
+    width: 45%;
+    border-right: 2px solid #000 !important;
+}
+
+#akcontent-page {
+    float: left;
+    width: 55%;
+}
+
+#total_item_kit {
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+#total_item_kit_save, #total_item_kit_update_price {
+    width: 100% !important;
+    margin: 3px;
+}
+
+.recipe-header{
+    margin-right: 10px;
+}

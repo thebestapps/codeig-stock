@@ -1,0 +1,377 @@
+.keypad-fn-buttons {
+  background-color: #999;
+  background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:    -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:     -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:      -o-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  border: none;
+  border-radius: .5em;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+              inset 0 2px 0 hsla(0,0%,100%,.1),
+              inset 0 1.2em 0 hsla(0,0%,100%,.1),
+              inset 0 -.2em 0 hsla(0,0%,100%,.1),
+              inset 0 -.25em 0 hsla(0,0%,0%,.5),
+              0 .25em .25em hsla(0,0%,0%,.1);
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 1.9em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 2px 5px 1px 1px;
+  /* margin: 0 .2em .2em; */
+  /* padding: .5em 1.5em .75em; */
+  padding: .5em 1.2em .75em;
+  position: relative;
+  text-decoration: none !important;
+  text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 105px;
+  /* height: 80px; */
+}
+
+.keypad-fn-buttons:hover {
+  outline: none;
+}
+.keypad-fn-buttons:hover,
+.keypad-fn-buttons:focus {
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+            inset 0 2px 0 rgba(12, 11, 11, 0.1),
+            inset 0 1.2em 0 hsla(0,0%,100%,.1),
+            inset 0 -.2em 0 hsla(0,0%,100%,.1),
+            inset 0 -.25em 0 hsla(0,0%,0%,.5),
+            inset 0 0 0 3em hsla(0,0%,100%,.2),
+            0 .25em .25em hsla(0,0%,0%,.1);
+}
+
+.keypad-fn-buttons:active {
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+              inset 0 2px 0 hsla(0,0%,100%,.1),
+              inset 0 1.2em 0 hsla(0,0%,100%,.1),
+              inset 0 0 0 3em hsla(0,0%,100%,.2),
+              inset 0 .25em .5em hsla(0,0%,0%,.05),
+              0 -1px 1px hsla(0,0%,0%,.1),
+              0 1px 1px hsla(0,0%,100%,.25);
+  margin-top: .20em;
+  outline: none;
+  padding-bottom: .5em;
+}
+
+
+/*
+Back Space
+*/
+.keypad-fn-backspace {
+  background-color: #999;
+  background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:    -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:     -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:      -o-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  border: none;
+  border-radius: .5em;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+              inset 0 2px 0 hsla(0,0%,100%,.1),
+              inset 0 1.2em 0 hsla(0,0%,100%,.1),
+              inset 0 -.2em 0 hsla(0,0%,100%,.1),
+              inset 0 -.25em 0 hsla(0,0%,0%,.5),
+              0 .25em .25em hsla(0,0%,0%,.1);
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 2.5vmin;
+  font-weight: bold;
+  line-height: 0;
+  margin: 2px 5px 1px 1px;
+  /* margin: 0 .2em .2em; */
+  /* padding: .5em 1.5em .75em; */
+  padding: .5em 1.2em .75em;
+  position: relative;
+  text-decoration: none !important;
+  text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 102px;
+  height: 45px;
+}
+
+.keypad-fn-backspace:hover {
+  outline: none;
+}
+.keypad-fn-backspace:hover,
+.keypad-fn-backspace:focus {
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+          inset 0 2px 0 rgba(12, 11, 11, 0.1),
+          inset 0 1.2em 0 hsla(0,0%,100%,.1),
+          inset 0 -.2em 0 hsla(0,0%,100%,.1),
+          inset 0 -.25em 0 hsla(0,0%,0%,.5),
+          inset 0 0 0 3em hsla(0,0%,100%,.2),
+          0 .25em .25em hsla(0,0%,0%,.1);
+}
+
+.keypad-fn-backspace:active {
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+              inset 0 2px 0 hsla(0,0%,100%,.1),
+              inset 0 1.2em 0 hsla(0,0%,100%,.1),
+              inset 0 0 0 3em hsla(0,0%,100%,.2),
+              inset 0 .25em .5em hsla(0,0%,0%,.05),
+              0 -1px 1px hsla(0,0%,0%,.1),
+              0 1px 1px hsla(0,0%,100%,.25);
+  margin-top: .20em;
+  outline: none;
+  padding-bottom: .5em;
+}
+
+/* Cash In Okay Button */
+.keypad-okay-buttons {
+  background-color: #999;
+  background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:    -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:     -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:      -o-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  border: none;
+  border-radius: .5em;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+              inset 0 2px 0 hsla(0,0%,100%,.1),
+              inset 0 1.2em 0 hsla(0,0%,100%,.1),
+              inset 0 -.2em 0 hsla(0,0%,100%,.1),
+              inset 0 -.25em 0 hsla(0,0%,0%,.5),
+              0 .25em .25em hsla(0,0%,0%,.1);
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 1.9em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 2px 5px 1px 1px;
+  /* margin: 0 .2em .2em; */
+  /* padding: .5em 1.5em .75em; */
+  padding: .5em 1.2em .75em;
+  position: relative;
+  text-decoration: none !important;
+  text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 98%;
+  /* height: 80px; */
+}
+
+.keypad-okay-buttons:hover {
+  outline: none;
+}
+.keypad-okay-buttons:hover,
+.keypad-okay-buttons:focus {
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+            inset 0 2px 0 rgba(12, 11, 11, 0.1),
+            inset 0 1.2em 0 hsla(0,0%,100%,.1),
+            inset 0 -.2em 0 hsla(0,0%,100%,.1),
+            inset 0 -.25em 0 hsla(0,0%,0%,.5),
+            inset 0 0 0 3em hsla(0,0%,100%,.2),
+            0 .25em .25em hsla(0,0%,0%,.1);
+}
+
+.keypad-okay-buttons:active {
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+              inset 0 2px 0 hsla(0,0%,100%,.1),
+              inset 0 1.2em 0 hsla(0,0%,100%,.1),
+              inset 0 0 0 3em hsla(0,0%,100%,.2),
+              inset 0 .25em .5em hsla(0,0%,0%,.05),
+              0 -1px 1px hsla(0,0%,0%,.1),
+              0 1px 1px hsla(0,0%,100%,.25);
+  margin-top: .20em;
+  outline: none;
+  padding-bottom: .5em;
+}
+
+
+/* Next and Previous button */
+.keypad-nextprev-buttons {
+  background-color: #999;
+  background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:    -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:     -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:      -o-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+  border: none;
+  border-radius: .5em;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+              inset 0 2px 0 hsla(0,0%,100%,.1),
+              inset 0 1.2em 0 hsla(0,0%,100%,.1),
+              inset 0 -.2em 0 hsla(0,0%,100%,.1),
+              inset 0 -.25em 0 hsla(0,0%,0%,.5),
+              0 .25em .25em hsla(0,0%,0%,.1);
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 1.9em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 2px 5px 1px 1px;
+  /* margin: 0 .2em .2em; */
+  /* padding: .5em 1.5em .75em; */
+  padding: .5em 1.2em .75em;
+  position: relative;
+  text-decoration: none !important;
+  text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 161px;
+  /* height: 80px; */
+}
+
+.keypad-nextprev-buttons:hover {
+  outline: none;
+}
+.keypad-nextprev-buttons:hover,
+.keypad-nextprev-buttons:focus {
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+            inset 0 2px 0 rgba(12, 11, 11, 0.1),
+            inset 0 1.2em 0 hsla(0,0%,100%,.1),
+            inset 0 -.2em 0 hsla(0,0%,100%,.1),
+            inset 0 -.25em 0 hsla(0,0%,0%,.5),
+            inset 0 0 0 3em hsla(0,0%,100%,.2),
+            0 .25em .25em hsla(0,0%,0%,.1);
+}
+
+.keypad-nextprev-buttons:active {
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+              inset 0 2px 0 hsla(0,0%,100%,.1),
+              inset 0 1.2em 0 hsla(0,0%,100%,.1),
+              inset 0 0 0 3em hsla(0,0%,100%,.2),
+              inset 0 .25em .5em hsla(0,0%,0%,.05),
+              0 -1px 1px hsla(0,0%,0%,.1),
+              0 1px 1px hsla(0,0%,100%,.25);
+  margin-top: .20em;
+  outline: none;
+  padding-bottom: .5em;
+}
+
+.glossyblack {
+    background-color: rgba(17,17,17,1);
+    color: #fff !important;
+}
+
+.glossypurple {
+    background-color: rgb(107, 83, 130);
+    color: #fff !important;
+}
+
+.glossyred {
+    background-color: rgb(233, 16, 16);
+    color: #fff !important;
+}
+
+.glossygreen {
+    background-color: rgb(91, 158, 91);
+    color: #fff !important;
+}
+
+.glossyyellow {
+    background-color: rgb(212, 195, 40);
+    color: #fff !important;
+}
+
+.glossycustom1 {
+    background-color: rgba(209, 209, 209, 0.849);
+    color: #000 !important;
+}
+
+.DenominationNumpad {
+    float: left;
+    background-color:  rgb(73, 70, 70);
+    border-radius: 5px;
+}
+
+.DenominationUpDown {
+    float: left; 
+    width: 10%; 
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+
+.CashInDenominationContainer {
+    /* border: 1px solid #000; */
+    background-color:  rgb(35, 36, 35);
+    border-radius: 5px;
+}
+
+.CashInDenominationHeader {
+    /* border: 1px solid #000; */
+    overflow: auto;
+}
+
+.denomination-header {
+    float: left;
+    margin: 5px;
+    width: 30.33%;
+    /* border: 1px solid #000; */
+    font-size: 18px;
+}
+
+.CashInDenominationRow {
+    overflow: auto;
+}
+
+.denomination-number {
+    float:left;
+    margin: 5px;
+    width: 30.33%;
+    font-size: 18px;
+}
+
+.denomination-number input {
+    width: 100%;
+    color: #000 !important;
+}
+
+.denomination-equivalent {
+    text-align: right;
+    font-weight: bold;
+}
+
+.denomination-input-quantity input, .denomination-input-total input,  .denomination-input-other input{
+    font-size: 18px;
+}
+
+/* .denomination-input-quantity, .denomination-input-total, .denomination-input-other {
+    text-align: right;
+} */
+
+.denomination-input-quantity input, .denomination-total-total input {
+    font-size: 18px;
+} 
+
+.denomination-quantity-total, .denomination-total-total {
+    text-align: right;
+} 
+
+.highligted input {
+    background-color: rgba(233, 200, 150, 0.808) !important;
+}
+
+.mask-highligted {
+    background-color: rgba(233, 200, 150, 0.808) !important;
+}
+
+.invalid-value {
+    border: 2px solid red !important;
+}
+
+.keypad-function-container {
+    width: 100%;
+}

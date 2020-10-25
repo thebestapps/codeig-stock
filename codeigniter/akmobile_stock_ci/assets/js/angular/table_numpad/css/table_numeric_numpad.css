@@ -1,0 +1,206 @@
+.tbnumpad {
+	display: inline-block;
+}
+.tbnumpad, .tbnumpad .tbline, .tbnumpad .tbline ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.tbnumpad .tbline {
+	text-align: center;
+	/*margin-left: -14px;*/
+}
+
+.tbnumpad .tbline ul li {
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	border: 1px solid #468db3;
+	-webkit-box-shadow: 0 0 0px #468db3;
+	-webkit-box-shadow: inset 0 0 0px #468db3;
+	margin: 0px 0 0px 0px;
+	color: #f7faf7;
+	border-radius: 0px;
+	width: 25%;
+	padding-top: 3px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 75px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; 
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.tbnumpad .tbline .return {
+	width: 25%;
+}
+
+.tbnumpad .tbline .exit {
+	width: 25%;
+	background-color: #EC912A !important; 
+}
+
+.tbnumpad .tbline .price_change_cancel{
+	width: 10%;
+	padding: 0;
+}
+
+.tbnumpad .tbline .price_change_okay{
+	width: 10%;
+	padding: 0;
+}
+
+.tbnumpad .tbline .payout_cancel{
+	width: 10%;
+	padding: 0;
+}
+
+.tbnumpad .tbline .payout_okay{
+	width: 10%;
+	padding: 0;
+}
+
+.tbnumpad .tbline .backspace {
+	width: 25%;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.tbnumpad .tbline .empty_short {
+	width: 25%;
+	border: none;
+	pointer-events:none;
+}
+
+.tbnumpad .tbline .empty_long {
+	width: 25%;
+	border: none !important;
+	pointer-events:none;
+}
+
+.tbnumpad .tbline ul li:hover, .tbnumpad .tbline ul li.active {
+	background-color: #185a82;
+}
+
+.tbnumpad .tbline .weight_button{
+	width: 80px;
+}
+
+.tbnumpad .tbline .backspace_long {
+	width: 120px;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.tbnumpad .tbline .backspace_verylong {
+	width: 185px;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.tbnumpad .tbline .alert_close {
+	width: 80px;
+}
+
+.tbnumpad .tbline .button_cancel {
+	width: 80px;
+}
+
+.tbnumpad .tbline .skip_button{
+	width: 80px;
+}
+
+.tbnumpad .tbline .clear_items {
+	width: 25%;
+}
+
+.tbnumpad .tbline .empty_short {
+	width: 25%;
+	border: none;
+	pointer-events:none;
+}
+
+.tbnumpad .tbline .empty_long {
+	width: 25%;
+	border: none !important;
+	pointer-events:none;
+}
+
+@media screen and (max-width: 1024px) {
+	.tbnumpad .tbline ul li {
+		font-family: arial, sans-serif;
+		font-size: 2em;
+		display: inline-block;
+		border: 1px solid #468db3;
+		-webkit-box-shadow: 0 0 3px #468db3;
+		-webkit-box-shadow: inset 0 0 0px #468db3;
+		margin: 2px 0 0 2px;
+		color: #f7faf7;
+		border-radius: 0;
+		width: 24.6%;
+		padding-top:5%;
+		box-sizing: border-box;
+		text-align: center;
+		line-height: 75px;
+		overflow: hidden;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none; 
+		-khtml-user-select: none;
+		-moz-user-select: -moz-none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	.tbnumpad .tbline .return {
+		width: 25%;
+	}
+	
+	.tbnumpad .tbline .exit {
+		width: 25%;
+		background-color: #EC912A !important; 
+	}
+	
+	.tbnumpad .tbline .price_change_cancel{
+		width: 10%;
+		padding: 0;
+	}
+	
+	.tbnumpad .tbline .price_change_okay{
+		width: 10%;
+		padding: 0;
+	}
+	
+	.tbnumpad .tbline .payout_cancel{
+		width: 10%;
+		padding: 0;
+	}
+	
+	.tbnumpad .tbline .payout_okay{
+		width: 10%;
+		padding: 0;
+	}
+	
+	.tbnumpad .tbline .backspace {
+		width: 24%;
+		background: url("../assets/backspace.png") no-repeat center center;
+	}
+	
+	.tbnumpad .tbline .empty_short {
+		width: 25%;
+		border: none;
+		pointer-events:none;
+	}
+	
+	.tbnumpad .tbline .empty_long {
+		width: 24%;
+		border: none !important;
+		pointer-events:none;
+	}
+}
+
+
+/*End*/
+

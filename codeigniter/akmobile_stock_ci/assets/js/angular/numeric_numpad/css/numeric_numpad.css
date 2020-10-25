@@ -1,0 +1,204 @@
+.aknumpad {
+	display: inline-block;
+}
+.aknumpad, .aknumpad .akline, .aknumpad .akline ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.aknumpad .akline {
+	text-align: center;
+	/*margin-left: -14px;*/
+}
+
+.aknumpad .akline ul li {
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	border: 1px solid #468db3;
+	-webkit-box-shadow: 0 0 0px #468db3;
+	-webkit-box-shadow: inset 0 0 0px #468db3;
+	margin: 0px 0 0px 0px;
+	color: #f7faf7;
+	border-radius: 0px;
+	width: 26.5%;
+	padding-top: 3px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 75px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; 
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.aknumpad .akline .return {
+	width: 20%;
+}
+
+.aknumpad .akline .exit {
+	width: 20%;
+}
+
+.aknumpad .akline .price_change_cancel{
+	width: 10%;
+	padding: 0;
+}
+
+.aknumpad .akline .price_change_okay{
+	width: 10%;
+	padding: 0;
+}
+
+.aknumpad .akline .payout_cancel{
+	width: 10%;
+	padding: 0;
+}
+
+.aknumpad .akline .payout_okay{
+	width: 10%;
+	padding: 0;
+}
+
+.aknumpad .akline .backspace {
+	width: 20%;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.aknumpad .akline .empty_short {
+	width: 20%;
+	border: none;
+	pointer-events:none;
+}
+
+.aknumpad .akline .empty_long {
+	width: 20%;
+	border: none !important;
+	pointer-events:none;
+}
+
+.aknumpad .akline ul li:hover, .aknumpad .akline ul li.active {
+	background-color: #185a82;
+}
+
+.aknumpad .akline .weight_button{
+	width: 80px;
+}
+
+.aknumpad .akline .backspace_long {
+	width: 120px;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.aknumpad .akline .backspace_verylong {
+	width: 185px;
+	background: url("../assets/backspace.png") no-repeat center center;
+}
+
+.aknumpad .akline .alert_close {
+	width: 80px;
+}
+
+.aknumpad .akline .button_cancel {
+	width: 80px;
+}
+
+.aknumpad .akline .skip_button{
+	width: 80px;
+}
+
+.aknumpad .akline .clear_items {
+	width: 20%;
+}
+
+.aknumpad .akline .empty_short {
+	width: 26.5%;
+	border: none;
+	pointer-events:none;
+}
+
+.aknumpad .akline .empty_long {
+	width: 20%;
+	border: none !important;
+	pointer-events:none;
+}
+
+@media screen and (max-width: 1024px) {
+	.aknumpad .akline ul li {
+		font-family: arial, sans-serif;
+		font-size: 2em;
+		display: inline-block;
+		border: 1px solid #468db3;
+		-webkit-box-shadow: 0 0 3px #468db3;
+		-webkit-box-shadow: inset 0 0 0px #468db3;
+		margin: 2px 0 0 2px;
+		color: #f7faf7;
+		border-radius: 0;
+		width: 24.6%;
+		padding-top:5%;
+		box-sizing: border-box;
+		text-align: center;
+		line-height: 75px;
+		overflow: hidden;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none; 
+		-khtml-user-select: none;
+		-moz-user-select: -moz-none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	.aknumpad .akline .return {
+		width: 24%;
+	}
+	
+	.aknumpad .akline .exit {
+		width: 24%;
+	}
+	
+	.aknumpad .akline .price_change_cancel{
+		width: 10%;
+		padding: 0;
+	}
+	
+	.aknumpad .akline .price_change_okay{
+		width: 10%;
+		padding: 0;
+	}
+	
+	.aknumpad .akline .payout_cancel{
+		width: 10%;
+		padding: 0;
+	}
+	
+	.aknumpad .akline .payout_okay{
+		width: 10%;
+		padding: 0;
+	}
+	
+	.aknumpad .akline .backspace {
+		width: 24%;
+		background: url("../assets/backspace.png") no-repeat center center;
+	}
+	
+	.aknumpad .akline .empty_short {
+		width: 24.8%;
+		border: none;
+		pointer-events:none;
+	}
+	
+	.aknumpad .akline .empty_long {
+		width: 24%;
+		border: none !important;
+		pointer-events:none;
+	}
+}
+
+
+/*End*/
+

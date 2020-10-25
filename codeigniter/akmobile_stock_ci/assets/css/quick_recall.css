@@ -1,0 +1,228 @@
+input[type='checkbox'] {
+    width:10px;
+    height:10px;
+    transform: scale(2);
+    margin:6px;
+    outline: 0;
+}
+
+input[type='checkbox']:checked {
+    background: #abd;
+    outline: 0;
+}
+
+#on-hold-sale{
+    min-width: 100% !important;
+    width:100% !important;
+    min-height: 100% !important;
+    height: 100% !important;
+    margin:0;
+    padding:0;
+}
+
+#listOnHoldSale{
+    height: 590px;
+}
+
+.listitems{
+    width: 96%;
+    background: #fff !important;
+    overflow: auto;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.OHSlistitemsTotal{
+    width: 96%;
+    background: #fff !important;
+    overflow: auto;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.onhold-sale-left-pane{
+    float: left;
+    min-height: 85%;
+    height: 85%;
+    min-width: 30%;
+    width: 30%;
+}
+
+.onhold-sale-right-pane{
+    float: left;
+    min-height: 85%;
+    height: 85%;
+    min-width: 65%;
+    width: 69%;
+}
+
+ul.quick-recall-menu-right{
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    line-height: 45px;
+    padding-left: 0;
+    padding-top: 5px;
+}
+
+.quick-recall-menu-right li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    background-color: #09b57d;
+    cursor: pointer;
+}
+
+.quick-recall-menu-right li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #33B5E5;
+}
+
+.quick-recall-menu-right li {
+    float: left;
+    margin-left: 5px;
+    width: 15%;
+    font-size:1.4em;
+}
+
+ul.quick-recall-menu-left{
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    line-height: 45px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.quick-recall-menu-left li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    background-color: #09b57d;
+    cursor: pointer;
+}
+
+.quick-recall-menu-left li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #33B5E5;
+}
+
+.quick-recall-menu-left li {
+    float: left;
+    margin-left: 5px;
+    width: 23%;
+    font-size:1.4em;
+}
+
+#on-hold-sale-container{
+    background: #144766;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+.totals{
+	height:150px;
+	background: #fff;
+	border-top: 2px solid rgba(30,87,153,1);
+    overflow: hidden;
+}
+
+.DiscountList{
+    background: #fff;
+}
+  
+.DiscountList{
+    height: 300px;
+    overflow: auto;
+}
+
+#qr_numpad_discount{
+    width: 450px !important;
+    height: 480px !important;
+    min-width: 450px !important; 
+}
+
+#number_field .jqx-input-content {
+    font-size: 2em !important;
+    width: 100% !important;
+}
+
+#number_field {
+	display: block;
+	margin: 0 auto;
+	padding: 5px 10px;
+	font-size: 18px; 
+	width: 100%;
+	text-align:right;
+	border-radius:0px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #on-hold-sale{ 
+        min-width: 100% !important;
+        width: 100% !important; 
+        min-height: 100% !important;
+        height: 100% !important;
+        margin:0;
+        padding:0;
+    }
+
+    #listOnHoldSale{
+        height: 550px;
+    }
+  
+    #listOnHoldSale .jqx-grid-cell{
+        font-size: 1em !important;
+    }
+
+    .OHSlistitemsTotal{
+        width: 96%;
+        background: #fff !important;
+        overflow: auto;
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .listitems{
+        width: 96%;
+        background: #fff !important;
+        font-size: 1.5em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .onhold-sale-left-pane{
+        float: left;
+        min-height: 85%;
+        height: 85%;
+        min-width: 35%;
+        width: 35%;
+        background: #144766;
+    }
+
+    .onhold-sale-right-pane{
+        float: left;
+        min-height: 85%;
+        height: 85%;
+        min-width: 65%;
+        width: 65%;
+    }
+
+    #dialog-numpad-passcode{
+        width: 580px !important;
+        height: 580px !important; 
+    }
+
+    #qr_numpad_discount{
+        width: 580px !important;
+        height: 610px !important; 
+    }
+}
