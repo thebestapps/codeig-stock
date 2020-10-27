@@ -1,0 +1,75 @@
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <div class="login-logo">
+        <img src="../../assets/company_logo.png" alt="logo" />
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <!-- Login Form  -->
+  <div class="login1">
+    <ion-card mode="md">
+      <div class="form">
+        <ion-list>
+          <form [formGroup]="form_detail">
+            <ion-item mode="md">
+              <ion-label color="primary" position="stacked">Username</ion-label>
+              <ion-input
+                type="text"
+                formControlName="username"
+                placeholder="Username"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item mode="md">
+              <ion-label color="primary" position="stacked">Password</ion-label>
+              <ion-input
+                type="password"
+                formControlName="password"
+                placeholder="Password"
+              ></ion-input>
+            </ion-item>
+          </form>
+        </ion-list>
+        <ion-button
+          shape="undefined"
+          fill="solid"
+          expand="block"
+          (click)="Login_()"
+          >SIGN IN</ion-button
+        >
+      </div>
+    </ion-card>
+
+    <div
+      class="skip_now_txt"
+      style="
+        text-align: center;
+        justify-items: center;
+        justify-self: center;
+        font-family: sans-serif;
+        font-family: 'LatoRegular';
+      "
+      (click)="goToHome()"
+    >
+      Skip for Now
+    </div>
+    <div class="Success">{{message}}</div>
+  </div>
+</ion-content>
+
+<div class="box">
+  <div class="horizontal"></div>
+  <div style="text-align: center; justify-items: center">
+    <ion-row>
+      <ion-col
+        class="border_design"
+        style="text-align: center"
+        (click)="forgot_password()"
+      >
+        <p class="txt_footer">Forget Password ?</p>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

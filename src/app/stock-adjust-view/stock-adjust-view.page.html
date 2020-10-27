@@ -1,0 +1,285 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon
+        name="chevron-back-outline"
+        style="font-size: 25px"
+        (click)="goBack()"
+      ></ion-icon>
+    </ion-buttons>
+
+    <ion-title>Stock Adjust</ion-title>
+
+    <ion-buttons slot="end" *ngIf="isStockEditable">
+      <p class="id_">ID: {{uniqueId}}</p>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container" *ngIf="addedStock">
+    <ion-row>
+      <ion-col>
+        <button class="actn_btn" (click)="NewStock()">New</button>
+      </ion-col>
+      <ion-col>
+        <button
+          class="actn_btn disabled"
+          [disabled]="!stockEditable"
+          *ngIf="!stockEditable"
+          (click)="EditStock()"
+        >
+          Edit
+        </button>
+        <button class="actn_btn" *ngIf="stockEditable" (click)="EditStock()">
+          Edit
+        </button>
+      </ion-col>
+      <ion-col>
+        <button class="delete_btn">Delete</button>
+      </ion-col>
+    </ion-row>
+
+    <div class="table-ui">
+      <div class="header">
+        <ion-row>
+          <ion-col class="title-tbl first">
+            <p class="title_">Unique</p>
+          </ion-col>
+          <ion-col class="title-tbl">
+            <p class="title_">Date</p>
+          </ion-col>
+          <ion-col class="title-tbl">
+            <p class="title_">Invoice</p>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div
+        class="data-ui"
+        *ngFor="let d of stock_details; let i = index;"
+        (click)="setRow(i, d)"
+        [ngClass]="{'highlight': selectedIndex === i}"
+      >
+        <ion-row>
+          <ion-col class="tbl_col first">
+            <div class="txt-box">
+              <p class="txt_">{{d.Unique}}</p>
+            </div>
+          </ion-col>
+          <ion-col class="tbl_col">
+            <div class="txt-box">
+              <p class="txt_">{{d.Created}}</p>
+            </div>
+          </ion-col>
+          <ion-col class="tbl_col">
+            <div class="txt-box">
+              <p class="txt_">{{d.Invoice}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------------------NEW and Editable------------------------------------------------>
+
+  <div class="container" *ngIf="!addedStock">
+    <div class="btns_start">
+      <button class="actn_btn new" (click)="NewStock()">Save</button>
+
+      <button class="actn_btn new" (click)="Close()">Close</button>
+
+      <button
+        *ngIf="isStockEditable"
+        class="actn_btn new"
+        (click)="Click_Complete()"
+      >
+        Complete
+      </button>
+
+      <button
+        *ngIf="isStockEditable"
+        class="actn_btn delete"
+        (click)="Click_Delete()"
+      >
+        Delete
+      </button>
+    </div>
+
+    <ion-input
+      *ngIf="!data_to_display"
+      placeholder="Invoice"
+      class="search-input"
+      style="
+        border: 1px solid lightgray;
+        border-radius: 7px;
+        padding-left: 7px !important;
+        margin-bottom: 10px;
+      "
+      [(ngModel)]="invoice"
+    >
+    </ion-input>
+
+    <ion-input
+      *ngIf="!data_to_display"
+      placeholder="Note"
+      class="search-input"
+      style="
+        border: 1px solid lightgray;
+        border-radius: 7px;
+        padding-left: 7px !important;
+        margin-bottom: 10px;
+      "
+      [(ngModel)]="note"
+    >
+    </ion-input>
+
+    <div class="row_">
+      <div class="col_">
+        <ion-input
+          placeholder="Item Search"
+          class="search-input"
+          style="
+            border: 1px solid lightgray;
+            border-radius: 7px;
+            padding-left: 7px !important;
+            margin-bottom: 10px;
+          "
+          [(ngModel)]="searchInput"
+        >
+        </ion-input>
+      </div>
+      <div class="col_">
+        <button class="actn_btn Search" (click)="SearchItem()">Search</button>
+      </div>
+      <div class="col_" *ngIf="data_to_display">
+        <button class="actn_btn Search" (click)="AddNewItem()">Add</button>
+      </div>
+
+      <div class="col_">
+        <div class="aligner">
+          <button class="actn_btn Close" (click)="ClearSearch()">
+            <ion-icon name="close-outline" class="closeicn_"></ion-icon>
+          </button>
+        </div>
+        <!-- <button class="actn_btn Search Close" (click)="ClearSearch()">
+          Close
+        </button> -->
+        <!-- <img
+          src="../../assets/close-icon.png"
+          class="closeicn_"
+          (click)="ClearSearch()"
+        /> -->
+        <!-- <button class="actn_btn Close" (click)="ClearSearch()">
+          <ion-icon name="close-outline" class="closeicn"></ion-icon>
+        </button> -->
+      </div>
+    </div>
+
+    <!-- 
+    <ion-row>
+      <ion-col>
+        <ion-input
+          placeholder="Item Search"
+          class="search-input"
+          style="
+            border: 1px solid lightgray;
+            border-radius: 7px;
+            padding-left: 7px;
+            margin-bottom: 10px;
+          "
+          [(ngModel)]="searchInput"
+        >
+        </ion-input>
+      </ion-col>
+      <ion-col>
+        <button class="actn_btn Search" (click)="SearchItem()">Search</button>
+      </ion-col>
+      <ion-col>
+        <button class="close_btn" (click)="ClearSearch()">
+          <ion-icon name="close-outline" class="closeicn"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row> -->
+
+    <div class="table-ui">
+      <div class="header">
+        <ion-row>
+          <ion-col class="title-tbl first">
+            <p class="title_">Item</p>
+          </ion-col>
+          <ion-col class="title-tbl">
+            <p class="title_">Barcode</p>
+          </ion-col>
+          <ion-col class="title-tbl">
+            <p class="title_">Description</p>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="data_to_display" *ngIf="data_to_display">
+        <div
+          class="data-ui"
+          *ngFor="let d of searchData; let i = index;"
+          (click)="selectItem(i, d)"
+          [ngClass]="{'highlight': selectedIndex === i}"
+        >
+          <ion-row>
+            <ion-col class="tbl_col first">
+              <div class="txt-box">
+                <p class="txt_">{{d.Item}}</p>
+              </div>
+            </ion-col>
+            <ion-col class="tbl_col">
+              <div class="txt-box">
+                <p class="txt_">{{d.Barcode}}</p>
+              </div>
+            </ion-col>
+            <ion-col class="tbl_col">
+              <div class="txt-box">
+                <p class="txt_">{{d.Description}}</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+      <div class="data_to_display" *ngIf="!data_to_display">
+        <p class="txt_nodata">No data to display</p>
+      </div>
+
+      <!-- <div class="data-ui">
+        <ion-row>
+          <ion-col class="tbl_col first">
+            <div class="txt-box">
+              <p class="txt_">0</p>
+            </div>
+          </ion-col>
+          <ion-col class="tbl_col">
+            <div class="txt-box">
+              <p class="txt_">0</p>
+            </div>
+          </ion-col>
+          <ion-col class="tbl_col">
+            <div class="txt-box">
+              <p class="txt_">Lorem Ipsum</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div> -->
+    </div>
+  </div>
+</ion-content>
+
+<div class="box" *ngIf="addedStock">
+  <div class="horizontal"></div>
+  <div style="text-align: left; justify-items: left">
+    <ion-row>
+      <div class="btns-footer">
+        <button class="actn" (click)="filterBy('1')">Pending</button>
+        <button class="actn" (click)="filterBy('2')">Complete</button>
+        <button class="actn" (click)="filterBy('3')">All</button>
+      </div>
+    </ion-row>
+  </div>
+</div>

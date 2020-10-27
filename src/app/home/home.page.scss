@@ -1,0 +1,130 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+// .icon-row-1 {
+//   background: #0465b2;
+//   padding: 10px;
+//   text-align: center;
+//   color: white;
+//   border-radius: 10px;
+//   margin-right: 10px;
+//   margin-left: 10px;
+//   margin-top: 10px;
+//   padding-top: 20px !important;
+//   padding-bottom: 20px !important;
+// }
+
+// .icon-row-2 {
+//   background: #87b204;
+//   padding: 10px;
+//   text-align: center;
+//   color: white;
+//   border-radius: 10px;
+//   margin-right: 10px;
+//   margin-top: 10px;
+//   padding-top: 20px !important;
+//   padding-bottom: 20px !important;
+// }
+
+// .icon-row-3 {
+//   background: #b22c04;
+//   padding: 10px;
+//   text-align: center;
+//   color: white;
+//   border-radius: 10px;
+//   margin-right: 10px;
+//   margin-top: 10px;
+//   padding-top: 20px !important;
+//   padding-bottom: 20px !important;
+// }
+
+img.icon_img {
+  height: 68px;
+}
+ion-toolbar.toolbar-title-default.md.in-toolbar.hydrated {
+  --background: black;
+}
+
+ion-toolbar.toolbar-title-default.ios.in-toolbar.hydrated {
+  --background: black;
+}
+p.title_txt {
+  color: white;
+  font-family: sans-serif;
+}
+
+.icon-row {
+  text-align: center;
+  background: white;
+}
+
+.icon-row {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding-top: 10px;
+}
+
+.content_box {
+  background: #dee1e5;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+p.txt {
+  margin-top: 7px;
+  font-size: 13px;
+  color: #333;
+  font-family: system-ui;
+}
+
+ion-title.md.title-default.hydrated {
+  text-align: center;
+  margin-left: -107px;
+  font-size: 16px;
+}
+
+ion-title.ios.title-default.hydrated {
+  text-align: center;
+  margin-left: -107px;
+  font-size: 16px;
+}
+
+ion-icon.icon_.md.hydrated {
+  font-size: 40px;
+  height: 68px;
+}
+
+ion-icon.icon_.ios.hydrated {
+  font-size: 40px;
+  height: 68px;
+}
+img.logo {
+  height: 45px;
+}
