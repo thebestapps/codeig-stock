@@ -58,4 +58,11 @@ export class CommonService {
   async navigate(page) {
     this.navCtrl.navigateForward(page);
   }
+
+  async storageRemoveItem(key){
+    localStorage.removeItem(key);
+    this.storage.remove(key);
+  }
+
+
 }

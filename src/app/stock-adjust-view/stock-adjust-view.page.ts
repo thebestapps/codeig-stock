@@ -27,6 +27,7 @@ export class StockAdjustViewPage implements OnInit {
   stock_details_data: any;
   Selected_Item_to_add: any;
   ItemsAddArray:any;
+  added_items: any;
 
   stock_details = [
     {
@@ -68,7 +69,6 @@ export class StockAdjustViewPage implements OnInit {
     });
 
    console.log(this.getLocalData("stocks")['__zone_symbol__value']); 
-  //  console.log(JSON.parse(this.getLocalData("stocks"))); 
     // Get cached API result
 
    let var2 = this.getLocalData("stocks")['__zone_symbol__value']; 
@@ -77,7 +77,6 @@ export class StockAdjustViewPage implements OnInit {
   }
 
   private getLocalData(key) {
-    //  this.config.storageGet(`${key}`);
     return this.config.storageGet(key);
   }
   loadData(refresh = false, refresher?) {
@@ -107,6 +106,24 @@ export class StockAdjustViewPage implements OnInit {
   NewStock() {
     this.isStockEditable = false;
     this.addedStock = false;
+
+    let dataAdd = [
+      {
+        Unique:'',
+        Date: '',
+        Invoice: '',
+        Note: '',
+        Items : 
+
+          this.added_items
+
+        
+      }
+    ];
+
+    console.log(dataAdd);
+
+    
   }
 
   EditStock() {
@@ -119,9 +136,40 @@ export class StockAdjustViewPage implements OnInit {
   }
 
   Close() {
-    this.isStockEditable = false;
-    this.addedStock = true;
+    this.presentAlertConfirm();
   }
+
+  async presentAlertConfirm() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: '',
+      message: 'Do you want to save your changes?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {
+            console.log('Confirm Cancel: blah');
+          }
+        }, {
+          text: 'Yes',
+          handler: () => {
+            console.log('Confirm Okay');
+            this.isStockEditable = false;
+            this.addedStock = true;
+            this.config.storageRemoveItem('newInvoiceAdd');
+            this.config.storageRemoveItem('invoice');
+            this.config.storageRemoveItem('note');
+
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
+
 
   SearchItem() {
 
@@ -145,6 +193,11 @@ export class StockAdjustViewPage implements OnInit {
 
     if (this.searchData.length >= 1) {
       this.data_to_display = true;
+      console.log('incoice'+this.invoice);
+      
+      this.config.storageSave('invoice', this.invoice);
+      this.config.storageSave('note', this.note);
+
     }
   }
 
@@ -154,9 +207,16 @@ export class StockAdjustViewPage implements OnInit {
   }
 
   ClearSearch() {
+    
+    console.log(this.added_items);
+    console.log('dsdf');
+    
     this.searchInput = "";
     this.searchData = [];
     this.data_to_display = false;
+
+    
+    // this.config.storageClear();
   }
 
   filterBy(val) {
@@ -184,34 +244,80 @@ export class StockAdjustViewPage implements OnInit {
 
     console.log(this.Selected_Item_to_add);
     if (this.Selected_Item_to_add != undefined) {
-      let refresh = false;
-      console.log(JSON.stringify(this.Selected_Item_to_add));
+
+
+      let var2 = this.getLocalData("newInvoiceAdd")['__zone_symbol__value']; 
+      console.log(JSON.parse(var2));
+      
+       if(var2 != null){
   
-      this.config.storageSave('note', this.note);
+        console.log('Condition True--- Two +'+var2.length);
+  
+        console.log(this.getLocalData("newInvoiceAdd"));
+        
+  
+        let arr1 = JSON.parse(this.getLocalData("newInvoiceAdd")['__zone_symbol__value']); 
+        let arr2 = [{Item:this.Selected_Item_to_add.Item, Barcode:this.Selected_Item_to_add.Barcode , Description: this.Selected_Item_to_add.Description}];
+  
+        let arr3 = [ ...arr1, ...arr2]
+  
+        console.log(arr1);
+        console.log(arr2);
+        
+  
+  console.log('CONCAT---------'+JSON.stringify(arr3));
+
+  console.log('CONCAT---------'+JSON.parse(JSON.stringify(arr3)));
+
+  this.config.storageRemoveItem('newInvoiceAdd');
+  this.config.storageSave('newInvoiceAdd', arr3);
+  // convert the array into an object where key is the array index and value is the value of each element in the array
+  let obj = arr3.reduce((prev, current, idx) => {
+    prev[idx] = current
+    return prev
+  }, {});
+
+  console.log('Check for object'+JSON.stringify(obj));
+  
+  var object1 = arr3;
+  let object2 = [];
+  object2.push(arr3);
+  this.added_items = object2['0'];
+
+  
+      }
+
+    else if(var2 == null){
+
+      console.log('Condition True--- One +'+var2);
+
+      let arr1 = [{Item:this.Selected_Item_to_add.Item, Barcode:this.Selected_Item_to_add.Barcode , Description: this.Selected_Item_to_add.Description}]
+      this.config.storageSave('newInvoiceAdd', arr1);
       this.config.storageSave('invoice', this.invoice);
-  
-      let todayDate = new Date().getTime()
-      this.ItemsAddArray = [
-        {
-          Created: todayDate,
-          Invoice: this.invoice,
-          Notes: this.note,
-        },
-      ];
-  
-    console.log('DATA 1'+ JSON.stringify(this.ItemsAddArray));
+      this.config.storageSave('note', this.note);
+    }
 
-       this.ItemsAddArray.Items.push({
-    
-        Item: this.Selected_Item_to_add.Item,
-        Barcode: this.Selected_Item_to_add.Barcode,
-        Description: this.Selected_Item_to_add.Description,
-     
-      });
-  
-      console.log('DATA 2'+ JSON.stringify(this.ItemsAddArray));
+   
+       // first array
 
-      this.config.storageSave("newInventoryToSave", this.ItemsAddArray);
+// then save in local
+
+
+
+// then retreive from it
+
+// then add new item to the retreived one
+
+
+// concat
+
+// save new and remove old
+
+// second array
+
+// concat arr1 and arr2
+
+
 
     }
 
@@ -231,5 +337,34 @@ export class StockAdjustViewPage implements OnInit {
       await alert.present();
     }
 
+
+
+
+    filterItems(event) {
+
+      const val = event.target.value;
+      this.stock_details = this.stock_details_data;
+
+
+      this.stock_details = this.stock_details.filter((item) => {
+        return ((item.Invoice.toLowerCase().indexOf(val.toLowerCase()) > -1) || 
+    (item.Notes .toLowerCase().indexOf(val.toLowerCase()) > -1) );
+      })
+      console.log(this.stock_details);
+      
+    }
+
+    
+
  
 }
+
+export interface ResProject {
+
+  Unique: string; 
+  Created: string; 
+  Invoice: string; 
+  Notes: string; 
+  Status: number; 
+}
+
