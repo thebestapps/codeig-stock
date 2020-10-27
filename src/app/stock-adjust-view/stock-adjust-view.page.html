@@ -18,12 +18,30 @@
 
 <ion-content>
   <div class="container" *ngIf="addedStock">
-    <ion-row>
-      <ion-col>
-        <button class="actn_btn" (click)="NewStock()">New</button>
-      </ion-col>
-      <ion-col>
-        <button
+
+    <div class="row_">
+      <div class="col_">
+        <ion-input
+          placeholder="Item Search"
+          class="search-input"
+          style="
+            border: 1px solid lightgray;
+            border-radius: 7px;
+            padding-left: 7px !important;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          "
+          [(ngModel)]="searchInput"
+        >
+        </ion-input>
+        </div>
+
+        <div class="col_">
+          <button class="actn_btn" (click)="NewStock()">New</button>
+        </div>
+
+        <div class="col_">
+          <button
           class="actn_btn disabled"
           [disabled]="!stockEditable"
           *ngIf="!stockEditable"
@@ -34,12 +52,15 @@
         <button class="actn_btn" *ngIf="stockEditable" (click)="EditStock()">
           Edit
         </button>
-      </ion-col>
-      <ion-col>
-        <button class="delete_btn">Delete</button>
-      </ion-col>
-    </ion-row>
+        </div>
 
+        <div class="col_">
+          <button class="delete_btn">Delete</button>
+        </div>
+
+    </div>
+
+  <!-- </div> -->
     <div class="table-ui">
       <div class="header">
         <ion-row>
@@ -51,6 +72,9 @@
           </ion-col>
           <ion-col class="title-tbl">
             <p class="title_">Invoice</p>
+          </ion-col>
+          <ion-col class="title-tbl">
+            <p class="title_">Note</p>
           </ion-col>
         </ion-row>
       </div>
@@ -75,6 +99,11 @@
           <ion-col class="tbl_col">
             <div class="txt-box">
               <p class="txt_">{{d.Invoice}}</p>
+            </div>
+          </ion-col>
+          <ion-col class="tbl_col">
+            <div class="txt-box">
+              <p class="txt_">{{d.Notes}}</p>
             </div>
           </ion-col>
         </ion-row>
